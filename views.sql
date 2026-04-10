@@ -32,4 +32,51 @@ ORDER BY Customer_ID DESC LIMIT 5;
 CREATE VIEW Rides_Cancelled_by_Drivers_P_C_Issues AS 
 SELECT COUNT(*)
 FROM Bookings 
-WHERE Canceled_Rides_by_Driver ="Personal & Car related issue"
+WHERE Canceled_Rides_by_Driver ="Personal & Car related issue";
+
+-- 6. Find the maximum and minimum driver ratings for Prime Sedan bookings:
+CREATE VIEW Max_Min_Driver_Rating AS 
+SELECT 
+MAX(Driver_Ratings) AS Max_Ratings,
+MIN(Driver_Ratings) AS Min_Ratings
+FROM Bookings
+WHERE Vehicle_Type = "Prime Sedan";
+
+-- 7. Retrieve all rides where payment was made using UPI:
+CREATE VIEW UPI_Payment AS 
+SELECT *
+FROM Bookings
+WHERE Payment_Method = "UPI";
+
+-- 8. Find the average customer rating per vehicle type:
+CREATE VIEW AVG_Cust_Rating AS 
+SELECT Vehicle_Type,
+AVG(Customer_Rating) AS avg_customer_rating
+FROM Bookings 
+GROUP BY Vehicle_Type;
+
+-- 9. Calculate the total booking value of rides completed successfully:
+CREATE VIEW total_succesful_ride_value AS 
+SELECT 
+SUM(Booking_Value) as total_succesful_ride_value
+FROM Bookings
+WHERE Booking_Status = "Success";
+
+-- 10. List all incomplete rides along with the reason:
+CREATE VIEW Incomplete_Rides_Reason AS
+SELECT 
+Booking_ID,
+Incomplete_Rides_Reason
+FROM Bookings
+WHERE Incomplete_Rides = "Yes";
+
+
+
+
+
+
+
+
+
+
+
