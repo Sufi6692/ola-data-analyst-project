@@ -1,6 +1,3 @@
-
-### 🔷 Short Description (for GitHub “About” section)
-
 **SQL-based data analysis project on Ola ride bookings, focusing on revenue trends, cancellations, and customer behavior, with structured views and analytical queries.**
 
 ---
