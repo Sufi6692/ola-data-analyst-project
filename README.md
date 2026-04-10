@@ -2,7 +2,6 @@
 
 ---
 
-### 🔷 Full Description (for README.md)
 
 ## 🚖 OLA Data Analyst Project
 
