@@ -64,7 +64,3 @@ This project focuses on analyzing ride booking data from Ola using SQL to uncove
 ### 🚀 Outcome
 
 This project demonstrates end-to-end data analysis workflow — from raw data transformation using SQL views to generating business insights and dashboards. It reflects practical skills required for a Data Analyst role.
-
-
-* Turn this into a **top-tier case study (with storytelling)**
-* Or help you write **GitHub tags + keywords + resume bullet points** to maximize visibility
