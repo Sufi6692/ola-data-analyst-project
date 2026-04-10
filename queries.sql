@@ -39,3 +39,5 @@ FROM total_succesful_ride_value;
 -- 10. List all incomplete rides along with the reason:
 SELECT *
 FROM Incomplete_Rides_Reason;
+
+-- updated version
